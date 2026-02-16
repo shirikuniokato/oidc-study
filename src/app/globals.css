@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --color-card: var(--card-bg);
+  --color-card-foreground: var(--card-fg);
+  --color-border: var(--border-color);
+  --color-muted: var(--muted-bg);
+  --color-muted-foreground: var(--muted-fg);
+  --color-accent: var(--accent-bg);
+  --color-accent-foreground: var(--accent-fg);
+  --color-destructive: var(--destructive-color);
+}
+
+:root {
+  --bg: oklch(0.145 0 0);
+  --fg: oklch(0.95 0.01 250);
+  --card-bg: oklch(0.178 0.005 285);
+  --card-fg: oklch(0.95 0.01 250);
+  --border-color: oklch(0.3 0.005 285);
+  --muted-bg: oklch(0.22 0.005 285);
+  --muted-fg: oklch(0.65 0.01 250);
+  --accent-bg: oklch(0.55 0.2 260);
+  --accent-fg: oklch(0.98 0.005 250);
+  --destructive-color: oklch(0.55 0.2 25);
+  --radius: 0.625rem;
+}
+
+body {
+  font-feature-settings: "palt";
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(0.35 0.005 285);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.45 0.005 285);
+}
